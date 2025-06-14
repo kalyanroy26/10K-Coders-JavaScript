@@ -18,7 +18,7 @@
 // let even_sum = 0
 // while(num!=0){
 //     let last_digit = num%10
-    
+
 //     if (last_digit%2==0){
 //         even_sum+=last_digit
 //     }
@@ -73,7 +73,7 @@
 //     }
 //     else{
 //         output = [0,1]
-//         for(let i =2;i<n;i++){
+//         for(let i=2;i<n;i++){
 //             output.push(output[output.length-2]+output[output.length-1])
 //         }
 //     }
@@ -105,7 +105,7 @@
 
 // if(sum==num){
 //     console.log("armstrong");
-    
+
 // }
 
 // // // 7.Find Factorial (Loop and Recursion)
@@ -170,7 +170,7 @@
 //     let x = temp.slice(0,mid).join("")
 //     let y = temp.slice(mid,temp.length).join("")
 //     console.log(x,y);
-    
+
 //     if(num == (+x)+(+y)){
 //         return true
 //     }
@@ -204,12 +204,11 @@
 //     let newList = {}
 //     let newArr = []
 //     for (const element of list) {
-//         let count = 0
-//         for (const ele of list) {
-//             if (element == ele){
-//                 count++
-//                 newList[element] = count
-//             }
+//         if(newList[element]){
+//             newList[element]++
+//         }
+//         else{
+//             newList[element] = 1
 //         }
 //     }
 //     for (const key in newList) {
@@ -223,3 +222,101 @@
 // console.log(dupList(arr));
 
 
+// 13.Write a JavaScript function that takes a string as input and returns the character that appears the most times in the string.
+
+// let char_count = {}
+// let string = "programming"
+// for(let ele of string){
+
+//     if(char_count[ele]){
+//         char_count[ele]++
+//     }
+//     else{
+//         char_count[ele] = 1
+//     }
+// }
+
+// let max = 0
+// let char = ''
+
+// for (const key in char_count) {
+//     if(char_count[key]>max){
+//         max=char_count[key]
+//         char = key
+//     }
+// }
+
+// console.log(char,max);
+
+
+
+
+
+
+
+
+// 14.Is Anagram?
+
+// function check_anagram(string) {
+//     let char_count = {}
+//     for (let ele of string) {
+//         if (char_count[ele]) {
+//             char_count[ele]++
+//         }
+//         else {
+//             char_count[ele] = 1
+//         }
+//     }    
+//     return Object.keys(char_count).sort().join("")
+// }
+
+// let str1 = 'tea'
+// let str2 = 'ate'
+
+// if (check_anagram(str1)==check_anagram(str2)){
+//     console.log("Both are Anagrams");
+// }
+
+
+// or 
+
+// function check_anagram(str1,str2){
+//     if(str1.length === str2.length){
+//         str1 = str1.split('').sort().join('')
+//         str2 = str2.split('').sort().join('')
+
+//         if (str1===str2){
+//             return true
+//         }
+//     }
+
+//     return false
+// }
+
+// let x='tea'
+// let y='ate'
+
+// if (check_anagram(x,y)){
+//     console.log('both are anagrams');
+// }
+// else{
+//     console.log('not anagrams');    
+// }
+
+
+// 15.Write a JavaScript function to calculate the sum of the series:
+
+// function cal_series(num) {
+//     let sum = 0
+//     for (let i = 1; i <= num; i++) {
+//         if (i % 2 == 0) {
+//             sum = sum - i
+//         }
+//         else {
+//             sum = sum + i
+//         }
+//     }
+//     return sum
+// }
+
+// console.log(cal_series(6));
