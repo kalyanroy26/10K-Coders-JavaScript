@@ -18,12 +18,12 @@ let handleRegister = () => {
 
     if (password === confirm_password) {
         window.localStorage.setItem("users", users)
+        alert("registration success")
         location.assign('http://127.0.0.1:5500/Day-15/login.html')
-        console.log("data stored");
         
     }
     else {        
-        console.log("password not matched")
+        alert("password not matched")
     }
 }
 
@@ -46,9 +46,11 @@ let handleLogin = ()=>{
     });
 
     if (is_registered){
+        alert("login success")
         location.assign('http://127.0.0.1:5500/Day-15/home.html')
     }
     else{
+        alert("credentials not matching")
         location.assign('http://127.0.0.1:5500/Day-15/register.html')
     }
 }
