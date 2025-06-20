@@ -1,6 +1,6 @@
 
 let handleLoad = ()=>{
-    location.assign('/register.html')
+    location.assign('https://kalyanroy26.github.io/10K-Coders-Javascript/Day-15/register.html')
 }
 
 
@@ -25,7 +25,7 @@ let handleRegister = () => {
     if (password === confirm_password) {
         window.localStorage.setItem("users", users)
         alert("registration success")
-        location.assign('http://127.0.0.1:5500/Day-15/login.html')
+        location.assign('https://kalyanroy26.github.io/10K-Coders-Javascript/Day-15/login.html')
         
     }
     else {        
@@ -53,11 +53,11 @@ let handleLogin = ()=>{
 
     if (is_registered){
         alert("login success")
-        location.assign('http://127.0.0.1:5500/Day-15/home.html')
+        location.assign('https://kalyanroy26.github.io/10K-Coders-Javascript/Day-15/home.html')
     }
     else{
         alert("credentials not matching")
-        location.assign('http://127.0.0.1:5500/Day-15/register.html')
+        location.assign('https://kalyanroy26.github.io/10K-Coders-Javascript/Day-15/register.html')
     }
 }
 
