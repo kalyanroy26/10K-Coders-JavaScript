@@ -1,14 +1,10 @@
-let title = document.getElementById('title')
+let add = document.querySelector('#add')
+let list = document.querySelector('#list')
 
-function newTitle(){
-    let userName = prompt("enter your name: ")
-    title.innerHTML = `welcome <i>${userName}</i>`
-}
+add.addEventListener('click',()=>{
+    let value = prompt("enter item name to add to the list")
+    let listItem = document.createElement('li')
+    listItem.innerHTML = value 
 
-let toggle = document.querySelector('#btn')
-
-toggle.addEventListener('click',()=>{
-    title.classList.toggle('huge')
+    list.append(listItem)
 })
-
-newTitle()
