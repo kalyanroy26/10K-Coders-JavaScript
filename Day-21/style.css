@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  background-color: #ff2e63;
+  width: 100%;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+}
+
+.main {
+  width: 70%;
+  min-height: 80vh;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+fieldset {
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+}
+
+.main > fieldset > form {
+  display: flex;
+  flex-flow: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  height: 100%;
+  padding: 2rem;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.textbox{
+  width: 100%;
+}
+
+#submit {
+  height: 2.5rem;
+  width: 6rem;
+  color: #fff;
+  background-color: #ff2e63;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+#submit:hover {
+  transform: scale(0.95);
+}
+
+input {
+  border: 1px solid #333;
+  background-color: #fff;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 300px;
+  height: 3rem;
+  font-family: poppins;
+  border-color: #e2e2e2;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+textarea {
+  border-radius: 10px;
+  border-color: #e2e2e2;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+
+input:focus {
+  border: 1px solid #333;
+}
+
+textarea:focus {
+  outline: none;
+  border: 1px solid #333;
+}
+
+input:hover {
+  transform: scale(0.95);
+}
+
+
+.records{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 1rem;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  background-color: #fff;
+  align-items: center;
+}
+
+.card{
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: .5rem;
+  transition: all .3s ease-in-out;
+  width: 80%;
+  cursor: pointer;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
