@@ -37,7 +37,7 @@ hr{
     grid-auto-rows: auto;
     margin-top: 2rem;
     width: 95%;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .card{
