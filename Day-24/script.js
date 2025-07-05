@@ -1,5 +1,3 @@
-let data
-
 fetch('https://cataas.com/cat/gif')
 .then(response=>response.url)
 .then((data)=>{
