@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "kalyan",
+      "city": "Hyderabad"
+    },
+    {
+      "id": "2",
+      "username": "Harsha",
+      "city": "hyderabad",
+      "mob": 9848005521
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "helmet",
+      "price": 2500
+    },
+    {
+      "id": "2",
+      "name": "earphones",
+      "price": 500
+    },
+    {
+      "id": "3",
+      "name": "knee pads",
+      "price": 300
+    },
+    {
+      "id": "4",
+      "name": "Bed Sheets",
+      "price": 300
+    },
+    {
+      "id": 6,
+      "name": "choti choti batein",
+      "price": 200
+    },
+    {
+      "id": 5,
+      "name": "Atomic Habits",
+      "price": 500
+    },
+    {
+      "id": 8,
+      "name": "dairy 2025",
+      "price": 399
+    },
+    {
+      "id": 9,
+      "name": "Attitude by shiv khera",
+      "price": 199
+    },
+    {
+      "id": 7,
+      "name": "ikigai hard cover",
+      "price": 499
+    },
+    {
+      "id": 10,
+      "name": "the pschology of money",
+      "price": 699
+    }
+  ]
+}
