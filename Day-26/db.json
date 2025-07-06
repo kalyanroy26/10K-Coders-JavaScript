@@ -1,3 +1,16 @@
 {
-    
+  "register": [
+    {
+      "id": "1",
+      "username": "kalyan",
+      "password": "alone",
+      "mobile": 6302525995
+    },
+    {
+      "id": "d144",
+      "username": "naveen",
+      "password": "secret@007",
+      "mobile": "9182337805"
+    }
+  ]
 }
