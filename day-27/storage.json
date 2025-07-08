@@ -1,0 +1,25 @@
+{
+  "register": [
+    {
+      "id": "7812",
+      "username": "kalyan",
+      "password": "secret",
+      "mobile": "6302525995",
+      "email": "kalyan@123"
+    },
+    {
+      "id": "2167",
+      "username": "harsha",
+      "password": "secret",
+      "mobile": "6302673636",
+      "email": "harsha@123"
+    },
+    {
+      "id": "e602",
+      "username": "",
+      "password": "",
+      "mobile": "8246253",
+      "email": ""
+    }
+  ]
+}
