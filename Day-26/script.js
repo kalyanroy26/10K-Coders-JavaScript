@@ -62,8 +62,6 @@ function updateLogin() {
     let inputUsername = document.getElementById("user").value
     let inputPassword = document.getElementById("pass").value
     let id = 1
-    let registered_users = []
-
     fetch(`${url}/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
@@ -76,20 +74,26 @@ function updateLogin() {
         .then((data) => {
             console.log(data);
             alert("password changed")
-            // registered_users = [...data]
-            // let user = registered_users.find(user =>
-            //     inputUsername == user.username
-            // )
-            // alert("password changed")
-            // console.log(user);
-
         }
         )
         .catch((err) => { console.log("Error:", err) })
-
 }
 
+function handleDelete(){
+    let id = 3
+    fetch(`${url}/${id}`,{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+    })
+    .then((resolve)=>resolve.json())
+    .then((data)=>{
+        console.log(data)
+        alert("account deleted")
+    }
+    )
+    .catch((err)=>console.log("Error:",err))
 
+}
 
 
 
