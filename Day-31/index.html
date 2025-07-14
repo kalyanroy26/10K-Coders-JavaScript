@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-content: center;
+            background-color: #1b64ad;
+        }
+
+        .card{
+            background-color: #fff;
+            border-radius: 10px;
+            font-size: 2rem;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .btn-container{
+            display: flex;
+            place-content: center;
+            gap: 2rem;
+        }
+
+        button{
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            height: 3rem;
+            width: 6rem;
+            cursor: pointer;
+        }
+
+        #dec{
+            background-color: #eb5050;
+            color: #fff;
+        }
+
+        #reset{
+            background-color: #1b64ad;
+            color: #fff;
+        }
+
+        #inc{
+            background-color: #1fab69;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2 id="count">count: 0</h2>
+            <div class="btn-container">
+                <button id="inc">Increase</button>
+                <button id="dec">Decrease</button>
+                <button id="reset">reset</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let count=0
+        let increase = document.getElementById('inc')
+        let decrease = document.getElementById('dec')
+        let counter = document.getElementById('count')
+        let reset = document.getElementById('reset')
+        increase.addEventListener('click',()=>{
+            count++
+            counter.innerText = `count: ${count}`
+        })
+
+        reset.addEventListener('click',()=>{
+            count = 0
+            counter.innerText = `count: ${count}`
+        })
+
+        decrease.addEventListener('click',()=>{
+            if(count>0){
+                count--
+                counter.innerText = `count: ${count}`
+            }
+        })
+        
+
+
+    </script>
+</body>
+</html>

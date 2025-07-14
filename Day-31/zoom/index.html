@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            gap: 1rem;
+            display: grid;
+            place-content: center;
+            text-align: center;
+        }
+
+        .btn-container{
+            display: flex;
+            place-content: center;
+            gap: 2rem;
+        }
+
+        .image{
+            width: auto;
+            height: 60vh;
+            border: 5px solid #e2e2e2;
+            border-radius: 5px;
+            overflow: hidden;
+
+        }
+
+        .image >img{
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+            border-radius: 2px;
+            transition: all .2s ease-in-out;
+            scale: 1;
+        }
+
+        button{
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            height: 3rem;
+            width: 6rem;
+            cursor: pointer;
+        }
+
+        #down{
+            background-color: #eb5050;
+            color: #fff;
+        }
+
+        #up{
+            background-color: #1fab69;
+            color: #fff;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Image scaler</h1>
+      <div class="image"><img id="pic" src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg" alt="demo" /></div>
+      <div class="btn-container">
+        <Button id="up">Zoom In</Button>
+        <Button id="down">Zoom Out</Button>
+      </div>
+    </div>
+  </body>
+
+  <script>
+
+    let up = document.getElementById('up')
+    let down = document.getElementById('down')
+    let pic = document.getElementById('pic')
+
+    let zoom=1
+    
+    up.addEventListener('click',()=>{
+        zoom+=0.1
+        pic.style.scale = zoom
+    })
+
+    down.addEventListener('click',()=>{
+        if(zoom>1){
+            zoom-=0.1
+            pic.style.scale = zoom
+        }
+    })
+    
+  </script>
+</html>
